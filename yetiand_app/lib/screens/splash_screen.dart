@@ -9,8 +9,8 @@ class LoadPage extends StatelessWidget {
       body: Container(
         margin: EdgeInsets.zero,
         child:
-        Image(
-          image: const AssetImage('assets/gif/Lil_Yachty_cropped.jpg'),
+        const Image(
+          image: AssetImage('assets/gif/Lil_Yachty_cropped.jpg'),
       ),
       )
     );

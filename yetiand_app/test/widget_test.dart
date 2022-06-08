@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:yetiand_app/main.dart';
-import 'package:yetiand_app/screens/load_page.dart';
+import 'package:yetiand_app/screens/splash_screen.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
