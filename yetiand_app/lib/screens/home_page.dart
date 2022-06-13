@@ -5,7 +5,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-      backgroundColor: Color.fromARGB(255, 255, 0, 0),
+      backgroundColor: Color.fromARGB(255, 125, 232, 247),
       centerTitle: true,
       title: const Text('Yetiand'),
     ));

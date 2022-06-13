@@ -61,6 +61,33 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
    - assets/loading.gif
+   - assets/benavente_logo.png
+   - assets/cedva_logo.png
+   - assets/ceib_logo.jpg
+   - assets/celsus_logo.png
+   - assets/cmq_logo.jpg
+   - assets/conservatorio_logo.png
+   - assets/educem_logo.jpg
+   - assets/firenze_logo.png
+   - assets/idcc_logo.jpg
+   - assets/ipep_logo.png
+   - assets/isae_logo.png
+   - assets/nuevomilenio_logo.jpg
+   - assets/oxford_logo.png
+   - assets/pablopicasso_logo.png
+   - assets/roque_logo.jpg
+   - assets/sabes_logo.png
+   - assets/tecno_logo.jpg
+   - assets/uca_logo.png
+   - assets/ulm_logo.png
+   - assets/unicelaya_logo.png
+   - assets/unigto_logo.png
+   - assets/unileon_logo.jpg
+   - assets/unitesba_logo.jpg
+   - assets/upn_logo.png
+   - assets/utec_logo.png
+   - assets/utlb_logo.png
+   - assets/uveg_logo.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
