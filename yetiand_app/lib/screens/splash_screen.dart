@@ -18,7 +18,7 @@ class _MyAppState extends State<MyApp> {
       image: Image.asset('assets/loading.gif'),
       loaderColor: Colors.white,
       photoSize: 150.0,
-      navigateAfterSeconds:  HomePage(),
+      navigateAfterSeconds:  const HomePage(),
     );
   }
 }
