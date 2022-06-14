@@ -3,6 +3,8 @@ import 'package:splashscreen/splashscreen.dart';
 import 'package:yetiand_app/screens/home_page.dart';
 
 class MyApp extends StatefulWidget {
+//  const MyApp({Key key}) : super(key: key);
+
   @override
   State<MyApp> createState() => _MyAppState();
 }
@@ -16,7 +18,7 @@ class _MyAppState extends State<MyApp> {
       image: Image.asset('assets/loading.gif'),
       loaderColor: Colors.white,
       photoSize: 150.0,
-      navigateAfterSeconds: HomePage(),
+      navigateAfterSeconds:  HomePage(),
     );
   }
 }
