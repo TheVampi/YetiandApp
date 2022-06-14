@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:yetiand_app/screens/splash_screen.dart';
@@ -18,6 +17,13 @@ class HomePage extends StatelessWidget {
           children: [
             Container(
               margin: const EdgeInsets.fromLTRB(7.0, 5.0, 7.0, 5.0),
+              child: Container(
+                child: const Text('Tecno',
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
+              ),
+            ),
+            Container(
               child: Row(
                 children: const [
                   Image(
@@ -26,6 +32,10 @@ class HomePage extends StatelessWidget {
                   ),
                   SizedBox(
                     width: 10.0,
+                  ),
+                  Expanded(
+                    child: Text(
+                        '\n• Licenciatura en Ciencias de la Comunicación.\n• Licenciatura en Relaciones Internacionales.\n• Licenciatura en Contaduría.\n• Licenciatura en Derecho.'),
                   ),
                 ],
               ),
@@ -48,19 +58,9 @@ class HomePage extends StatelessWidget {
 Container _containerUniversidad(String logoUni, String textoCarrera) {
   return Container(
     margin: const EdgeInsets.fromLTRB(7.0, 5.0, 7.0, 5.0),
-    child: Row(
-      children: [
-        Image(
-          image: AssetImage(logoUni),
-          width: 100,
-        ),
-        const SizedBox(
-          width: 10.0,
-        ),
-        Expanded(
-          child: Text(textoCarrera),
-        ),
-      ],
+    child: Container(
+      child: const Text('Tecno',
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
     ),
   );
 }
