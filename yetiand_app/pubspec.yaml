@@ -70,8 +70,6 @@ flutter:
    - assets/educem_logo.jpg
    - assets/firenze_logo.png
    - assets/idcc_logo.jpg
-   - assets/ipep_logo.png
-   - assets/isae_logo.png
    - assets/nuevomilenio_logo.jpg
    - assets/oxford_logo.png
    - assets/pablopicasso_logo.png
@@ -82,7 +80,6 @@ flutter:
    - assets/ulm_logo.png
    - assets/unicelaya_logo.png
    - assets/unigto_logo.png
-   - assets/unileon_logo.jpg
    - assets/unitesba_logo.jpg
    - assets/upn_logo.png
    - assets/utec_logo.png
@@ -100,6 +97,14 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+  - family: Century Gothic
+    fonts:
+      - asset: assets/fonts/CenturyGothic.ttf
+  - family: Poppins
+    fonts:
+      - asset: assets/fonts/Poppins-Bold.ttf
+      - asset: assets/fonts/Poppins-Regular.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:
