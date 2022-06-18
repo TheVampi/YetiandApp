@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
+import 'package:yetiand_app/screens/about_us.dart';
 import 'package:yetiand_app/screens/home_page.dart';
 import 'package:yetiand_app/screens/test_vocacional.dart';
 
@@ -19,7 +20,7 @@ class _MyAppState extends State<MyApp> {
       image: Image.asset('assets/loading.gif'),
       loaderColor: Colors.white,
       photoSize: 150.0,
-      navigateAfterSeconds: testVocacional(),
+      navigateAfterSeconds: AboutUs(),
     );
   }
 }
