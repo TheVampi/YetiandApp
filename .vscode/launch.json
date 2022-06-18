@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "yetiand_app",
+            "cwd": "yetiand_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "yetiand_app (profile mode)",
+            "cwd": "yetiand_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "yetiand_app (release mode)",
+            "cwd": "yetiand_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
