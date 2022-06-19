@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:yetiand_app/screens/about_us.dart';
+import 'package:yetiand_app/screens/home_page.dart';
 import 'package:yetiand_app/src/clase/variables_test_vocacional.dart';
 
 class testVocacional extends StatefulWidget {
@@ -13,6 +15,7 @@ class _testVocacionalState extends State<testVocacional> {
   String _nombre = "";
   String _edad = "";
   int _ramaEducativa = 0;
+  bool _estudiante = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +43,7 @@ class _testVocacionalState extends State<testVocacional> {
                         fontWeight: FontWeight.w600)),
                 Container(
                   width: double.infinity,
-                  padding: const EdgeInsets.all(20),
+                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -183,12 +186,65 @@ class _testVocacionalState extends State<testVocacional> {
                       const SizedBox(
                         height: 15,
                       ),
+                      const Text(
+                        'Por último, ¿Eres estudiante?',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.red,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          const Icon(
+                            Icons.book,
+                            size: 50,
+                            color: Colors.red,
+                          ),
+                          Switch.adaptive(
+                            value: _estudiante,
+                            onChanged: (valorVariableSwitch) {
+                              setState(() {
+                                _estudiante = valorVariableSwitch;
+                                print(
+                                    _estudiante); //imprime en consola el valor seleccionado
+                              });
+                            },
+                          ),
+                          Text(
+                            _estudiante
+                                ? 'Soy estudiante UwU 🤠'
+                                : 'No soy estudiante UnU 😥',
+                            style: const TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
+                      ),
                       Container(
                         width: double.infinity,
-                        child:   const ElevatedButton(
-                          child: Text(
-                            'Conoce tus resultados',
-                            style: TextStyle(color: Colors.white, fontSize: 16,),
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const HomePage(),
+                              ),
+                            );
+                          },
+                          style: ElevatedButton.styleFrom(
+                            primary: const Color.fromARGB(255, 7, 136, 241),
+                            //fixedSize: const Size(350, 100),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10)),
+                          ),
+                          child: const Text(
+                            '¡Comprueba tus resultados!',
+                            style: TextStyle(
+                              fontSize: 20,
+                            ),
                           ),
                         ),
                       ),
@@ -200,6 +256,35 @@ class _testVocacionalState extends State<testVocacional> {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => AboutUs(),
+            ),
+          );
+        },
+        backgroundColor: Colors.green,
+        child: const Icon(Icons.home),
+      ),
     );
+  }
+
+  String _obtenerRamaDeEstudios(int indice) {
+    switch (indice) {
+      case 0:
+        return "Ciencias Exactas e Ingenierias";
+      case 1:
+        return "Arte, Arquitectura y Diseño";
+      case 2:
+        return "Ciencias de la Salud";
+      case 3:
+        return "Ciencias Económico Administrativas";
+      case 4:
+        return "Ciencias Sociales y Humanidades";
+    }
+
+    return "Ciencias Biologicas y Agropecuarias";
   }
 }
