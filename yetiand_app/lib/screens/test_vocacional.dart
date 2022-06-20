@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:yetiand_app/screens/about_us.dart';
 import 'package:yetiand_app/screens/home_page.dart';
+import 'package:yetiand_app/screens/ramasDeEstudios/administrativas.dart';
+import 'package:yetiand_app/screens/ramasDeEstudios/biologicas_y_agropecuarias.dart';
+import 'package:yetiand_app/screens/ramasDeEstudios/ingenieria.dart';
+import 'package:yetiand_app/screens/ramasDeEstudios/arte_y_diseno.dart';
+import 'package:yetiand_app/screens/ramasDeEstudios/ciencias_sociales.dart';
+import 'package:yetiand_app/screens/ramasDeEstudios/salud.dart';
 import 'package:yetiand_app/src/clase/variables_test_vocacional.dart';
 
 class testVocacional extends StatefulWidget {
@@ -226,13 +232,95 @@ class _testVocacionalState extends State<testVocacional> {
                       Container(
                         width: double.infinity,
                         child: ElevatedButton(
+                          // ignore: void_checks
                           onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const HomePage(),
-                              ),
-                            );
+                            switch (_ramaEducativa) {
+                              case 0:
+                                return Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => ramaIngenieria(
+                                      alumno: variablesTest(
+                                        _nombre,
+                                        _edad,
+                                        _ramaEducativa,
+                                        _obtenerEsEstudianteONo(_estudiante),
+                                      ),
+                                    ),
+                                  ),
+                                );
+                              case 1:
+                                return Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => ramaArteYDiseno(
+                                      alumno: variablesTest(
+                                        _nombre,
+                                        _edad,
+                                        _ramaEducativa,
+                                        _obtenerEsEstudianteONo(_estudiante),
+                                      ),
+                                    ),
+                                  ),
+                                );
+                              case 2:
+                                return Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => ramaSalud(
+                                      alumno: variablesTest(
+                                        _nombre,
+                                        _edad,
+                                        _ramaEducativa,
+                                        _obtenerEsEstudianteONo(_estudiante),
+                                      ),
+                                    ),
+                                  ),
+                                );
+                              case 3:
+                                return Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => ramaAdministracion(
+                                      alumno: variablesTest(
+                                        _nombre,
+                                        _edad,
+                                        _ramaEducativa,
+                                        _obtenerEsEstudianteONo(_estudiante),
+                                      ),
+                                    ),
+                                  ),
+                                );
+                              case 4:
+                                return Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => ramaCienciasSociales(
+                                      alumno: variablesTest(
+                                        _nombre,
+                                        _edad,
+                                        _ramaEducativa,
+                                        _obtenerEsEstudianteONo(_estudiante),
+                                      ),
+                                    ),
+                                  ),
+                                );
+                              default:
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) =>
+                                        ramaBiologicasYAgropecuarias(
+                                      alumno: variablesTest(
+                                        _nombre,
+                                        _edad,
+                                        _ramaEducativa,
+                                        _obtenerEsEstudianteONo(_estudiante),
+                                      ),
+                                    ),
+                                  ),
+                                );
+                            }
                           },
                           style: ElevatedButton.styleFrom(
                             primary: const Color.fromARGB(255, 7, 136, 241),
@@ -261,7 +349,7 @@ class _testVocacionalState extends State<testVocacional> {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => AboutUs(),
+              builder: (context) => const HomePage(),
             ),
           );
         },
@@ -269,6 +357,14 @@ class _testVocacionalState extends State<testVocacional> {
         child: const Icon(Icons.home),
       ),
     );
+  }
+
+  String _obtenerEsEstudianteONo(bool indice) {
+    switch (indice) {
+      case false:
+        return "no eres estudiante";
+    }
+    return "eres estudiante";
   }
 
   String _obtenerRamaDeEstudios(int indice) {
