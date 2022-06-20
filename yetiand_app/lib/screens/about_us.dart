@@ -19,13 +19,14 @@ class _AboutUsState extends State<AboutUs> {
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 125, 232, 247),
         centerTitle: true,
-        title: const Text('Yetiand',
-         style: TextStyle(
+        title: const Text(
+          'Yetiand',
+          style: TextStyle(
             fontSize: 40,
             fontFamily: 'Century Gothic',
             fontWeight: FontWeight.bold,
           ),
-          ),
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -34,14 +35,15 @@ class _AboutUsState extends State<AboutUs> {
               height: 25.0,
             ),
             Center(
-              child: Text('Acerca de Nosotros',
-               style: TextStyle(
-            fontSize: 30,
-            color: Colors.green,
-            fontFamily: 'Century Gothic',
-            fontWeight: FontWeight.bold,
-          ),
-          ),
+              child: Text(
+                'Acerca de Nosotros',
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontFamily: 'Century Gothic',
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
             SizedBox(
               height: 15,
@@ -59,52 +61,51 @@ class _AboutUsState extends State<AboutUs> {
               height: 15,
             ),
             Center(
-              child: Text('Apoya nuestro proyecto',
-         style: TextStyle(
-            fontSize: 20,
-            fontFamily: 'Century Gothic',
-            fontWeight: FontWeight.bold,
-          ),
-          
-          ),
-          
+              child: Text(
+                'Apoya nuestro proyecto',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'Century Gothic',
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
-
             SizedBox(
               width: 70,
             ),
-            
             ElevatedButton(
-              child:
-                Text(
+              child: Text(
                 'Donar',
-                style: TextStyle(color: Colors.blue, fontSize: 15,fontFamily: 'Century Gothic'),
-            
-             ),
-              
+                style: TextStyle(
+                    color: Colors.blue,
+                    fontSize: 15,
+                    fontFamily: 'Century Gothic'),
+              ),
+              //                      icon: const Icon(Icons.sentiment_satisfied_alt_rounded ),
             ),
             Center(
               child: Text(
-                  'Infromacion Tecnica: \n\n •Creado con Flutter v3.0.2 \n\n •Licencias de codigo abierto de Google \n\n •Puedes ser colaborador del proyecto haciendo pull request en el repositorio:  \n\n •https://github.com/TheVampi \n\n',
-         style: TextStyle(
-            fontSize: 15,
-            fontFamily: 'Century Gothic',
-          ),
-          ),
+                'Infromacion Tecnica: \n\n •Creado con Flutter v3.0.2 \n\n •Licencias de codigo abierto de Google \n\n •Puedes ser colaborador del proyecto haciendo pull request en el repositorio:  \n\n •https://github.com/TheVampi \n\n',
+                style: TextStyle(
+                  fontSize: 15,
+                  fontFamily: 'Century Gothic',
+                ),
+              ),
             ),
             Center(
-              child: Text('Hecho con el ❤️ desde el CETIS 115',
-         style: TextStyle(
-            fontSize: 22,
-            fontFamily: 'Century Gothic',
-            fontWeight: FontWeight.bold,
-          ),
-          ),
+              child: Text(
+                'Hecho con el ❤️ desde el CETIS 115',
+                style: TextStyle(
+                  fontSize: 22,
+                  fontFamily: 'Century Gothic',
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             )
           ],
         ),
       ),
-       floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
             context,
