@@ -1,8 +1,8 @@
-class VariablesTest{
+class variablesTest{
   final String nombre;
   final String edad;
-  final String ramaEducativa;
+  final int ramaEducativa;
   final String estudiante;
 
-  VariablesTest(this.nombre, this.edad, this.ramaEducativa, this.estudiante);
+  variablesTest(this.nombre, this.edad, this.ramaEducativa, this.estudiante);
 }
