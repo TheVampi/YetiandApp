@@ -22,7 +22,13 @@ class _testVocacionalState extends State<testVocacional> {
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 125, 232, 247),
         centerTitle: true,
-        title: const Text('Yetiand'),
+        title: const Text('Yetiand',
+         style: TextStyle(
+            fontSize: 40,
+            fontFamily: 'Century Gothic',
+            fontWeight: FontWeight.bold,
+          ),
+          ),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -256,7 +262,7 @@ class _testVocacionalState extends State<testVocacional> {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
+       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           Navigator.push(
             context,
@@ -265,8 +271,9 @@ class _testVocacionalState extends State<testVocacional> {
             ),
           );
         },
-        backgroundColor: Colors.green,
-        child: const Icon(Icons.home),
+        label: const Text('Acerca de Nosotros'),
+        icon: const Icon(Icons.sentiment_satisfied_alt_rounded ),
+        backgroundColor: Colors.deepPurple,
       ),
     );
   }
