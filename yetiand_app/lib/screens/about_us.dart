@@ -30,11 +30,11 @@ class _AboutUsState extends State<AboutUs> {
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: const [
-            SizedBox(
+          children: [
+            const SizedBox(
               height: 25.0,
             ),
-            Center(
+            const Center(
               child: Text(
                 'Acerca de Nosotros',
                 style: TextStyle(
@@ -45,22 +45,22 @@ class _AboutUsState extends State<AboutUs> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
-            Center(
+            const Center(
                 child: Text(
-              'Lorem ipsum dolor sit amet consectetur adipiscing elit nec, ociosqu netus potenti taciti fames non phasellus etiam vestibulum, erat ad litora ligula platea massa sem.',
+              'Gracias por usar nuestra aplicación, creamos esta aplicacion para ayudar a todos los estudiantes que pasan dolores de cabeza como nosotros tratando de encontrar una carrera universitaria. Yetiand, proviene de la combinacion de Yessica, Fernando y Christian.',
               style: TextStyle(
                 fontFamily: 'Century Gothic',
                 fontWeight: FontWeight.bold,
                 fontSize: 15,
               ),
             )),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
-            Center(
+            const Center(
               child: Text(
                 'Apoya nuestro proyecto',
                 style: TextStyle(
@@ -70,10 +70,10 @@ class _AboutUsState extends State<AboutUs> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 70,
             ),
-            ElevatedButton(
+            const ElevatedButton(
               child: Text(
                 'Donar',
                 style: TextStyle(
@@ -83,9 +83,9 @@ class _AboutUsState extends State<AboutUs> {
               ),
               //                      icon: const Icon(Icons.sentiment_satisfied_alt_rounded ),
             ),
-            Center(
+            const Center(
               child: Text(
-                'Infromacion Tecnica: \n\n •Creado con Flutter v3.0.2 \n\n •Licencias de codigo abierto de Google \n\n •Puedes ser colaborador del proyecto haciendo pull request en el repositorio:  \n\n •https://github.com/TheVampi \n\n',
+                'Infromacion Tecnica: \n\n •Creado con Flutter v3.0.2 \n\n •Licencias de codigo abierto de Google \n\n •Puedes ser colaborador del proyecto haciendo pull request en el repositorio:  \n\n •https://github.com/TheVampi/YetiandApp \n\n',
                 style: TextStyle(
                   fontSize: 15,
                   fontFamily: 'Century Gothic',
@@ -93,6 +93,40 @@ class _AboutUsState extends State<AboutUs> {
               ),
             ),
             Center(
+              child: Row(
+                children: const [
+                  Image(
+                    image: AssetImage('assets/logocetmeja.jpg'),
+                    width: 90,
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Image(
+                    image: AssetImage('assets/flutter.png'),
+                    width: 90,
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Image(
+                    image: AssetImage('assets/github.png'),
+                    width: 90,
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Image(
+                    image: AssetImage('assets/platzi.jpg'),
+                    width: 90,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            const Center(
               child: Text(
                 'Hecho con el ❤️ desde el CETIS 115',
                 style: TextStyle(
@@ -101,7 +135,7 @@ class _AboutUsState extends State<AboutUs> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

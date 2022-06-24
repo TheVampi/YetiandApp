@@ -153,15 +153,41 @@ class ramaSalud extends StatelessWidget {
                 ),
                 //A PARTIR DE AQUI EMPIEZAN LOS CONTAINERS DE LAS UNIVERSIDADES
                 _containerUniversidad(
-                  'CEDVA Celaya',
-                  'assets/cedva_logo.png',
-                  '\n• Ing. Mecánica Automotriz',
+                'Escuela de Enfermería y Obstetricia CMQ',
+                'assets/cmq_logo.jpg',
+                '\n• Lic. en Ciencias y Habilidades de Enfermería',
                 ),
                 _containerUniversidad(
-                  'Complejo Escolar Interactivo del Bajío',
-                  'assets/ceib_logo.jpg',
-                  '\n• Ing. Industrial Administrativa.\n• Lic. en Diseño y Desarrollo de Aplicaciones.',
+                'Instituto Universitario del Centro de México',
+                'assets/educem_logo.jpg',
+                '• Lic. en Criminologia.\n• Lic. en Enfermería.\n• Lic. en Nutrición.\n• Lic. en Psicología Clínica.\n• Lic. en Psicología Educativa.\n• Lic. en Psicología Social.',
                 ),
+                _containerUniversidad(
+                'IDCC Instituto Dr. Carlos Coqui Campus Celaya',
+                'assets/idcc_logo.jpg',
+                '\n• Lic. en Radiología e Imagen.',
+                ),
+                            _containerUniversidad(
+                'Centro Universitario Pablo Picasso',
+                'assets/pablopicasso_logo.png',
+                '• Lic. en Criminología.',
+                ),
+                _containerUniversidad(
+                'Universidad Latina de México',
+                'assets/ulm_logo.png',
+                '• Cirujano Dentista.\n• Psicología.\n• Medico Cirujano.\n• Nutrición.',
+                ),
+                _containerUniversidad(
+                'Universidad de Celaya',
+                'assets/unicelaya_logo.png',
+                '\n• Lic. en Psicología Sistémica.\n• Lic. en Medicina.',
+                ),
+                _containerUniversidad(
+                'UNITESBA Universidad',
+                'assets/unitesba_logo.jpg',
+                '• Lic. Fisoterapia.',
+                ),
+                
               ],
             ),
           ),
