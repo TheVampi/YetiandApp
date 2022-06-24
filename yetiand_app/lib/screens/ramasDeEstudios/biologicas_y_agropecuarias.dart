@@ -144,16 +144,11 @@ class ramaBiologicasYAgropecuarias extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                //A PARTIR DE AQUI EMPIEZAN LOS CONTAINERS DE LAS UNIVERSIDADES
+                //A PARTIR DE AQUI EMPIEZAN LOS CONTAINERS DE LAS UNIVERSIDADES                
                 _containerUniversidad(
-                  'CEDVA Celaya',
-                  'assets/cedva_logo.png',
-                  '\n• Ing. Mecánica Automotriz',
-                ),
-                _containerUniversidad(
-                  'Complejo Escolar Interactivo del Bajío',
-                  'assets/ceib_logo.jpg',
-                  '\n• Ing. Industrial Administrativa.\n• Lic. en Diseño y Desarrollo de Aplicaciones.',
+                'Instituto Tecnológico de Roque',
+                'assets/roque_logo.jpg',
+                '\n• Ing. Agrónoma.\n• Ing. en Industrias Alimentarias.\n• Ing. en Innovación Agrícola Sostenible.',
                 ),
               ],
             ),

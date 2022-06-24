@@ -24,7 +24,6 @@ class HomePage extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
-          
           children: [
             Container(
               child: Row(
@@ -211,14 +210,14 @@ class HomePage extends StatelessWidget {
                 'assets/uveg_logo.jpg',
                 '\n• Lic. en Ciencias del Comportamiento Humano\n• Lic. en Derecho.\n• Lic. en Pedagogía.\n• Ing. en Sistemas computacionales.\n• Lic. en Administración de la Mercadotecnia.\n• Lic. en Administración del Capital Humano.\n• Lic. en Administración de las Finanzas.\n• Lic. en Gestión y Desarrollo Empresarial.\n• Ing. en Gestión de Proyectos.\n• Ing. en Gestión de Tecnologías de Información.\n• Ing. en Industrial.',
                 'Av. México - Japón S/N, Centro Comunitario Santa Rita (CEDECOM), 38030 Celaya, Gto.\n 461 608 6447'),
-                const SizedBox(
-                  height: 50,
-                ),
+            const SizedBox(
+              height: 50,
+            ),
             //AQUI ABAJO VAS A SUSTITUIR LOS VALORES DE ACUERDO A CADA UNIVERSIDAD
           ],
         ),
       ),
-    
+
       //BOTON
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
