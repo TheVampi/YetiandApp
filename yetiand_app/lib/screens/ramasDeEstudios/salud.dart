@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:yetiand_app/src/clase/variables_test_vocacional.dart';
 import 'package:yetiand_app/screens/test_vocacional.dart';
 
+import '../home_page.dart';
+
 class ramaSalud extends StatelessWidget {
   final variablesTest alumno;
   const ramaSalud({Key key, @required this.alumno}) : super(key: key);
@@ -11,7 +13,12 @@ class ramaSalud extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 189, 0, 31),
-        title: const Text('Tus resultados:'),
+        title: const Text('Tus resultados:',style: TextStyle(
+            fontSize: 40,
+            fontFamily: 'Century Gothic',
+            fontWeight: FontWeight.bold,
+          ),
+          ),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -150,15 +157,27 @@ class ramaSalud extends StatelessWidget {
                   'assets/cedva_logo.png',
                   '\n• Ing. Mecánica Automotriz',
                 ),
-                _containerUniversidad('Complejo Escolar Interactivo del Bajío',
-                'assets/ceib_logo.jpg',
-                '\n• Ing. Industrial Administrativa.\n• Lic. en Diseño y Desarrollo de Aplicaciones.',
+                _containerUniversidad(
+                  'Complejo Escolar Interactivo del Bajío',
+                  'assets/ceib_logo.jpg',
+                  '\n• Ing. Industrial Administrativa.\n• Lic. en Diseño y Desarrollo de Aplicaciones.',
                 ),
-
               ],
             ),
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => HomePage(),
+            ),
+          );
+        },
+        backgroundColor: Colors.green,
+        child: const Icon(Icons.home),
       ),
     );
   }

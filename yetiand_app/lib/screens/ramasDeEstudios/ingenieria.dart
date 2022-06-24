@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:yetiand_app/src/clase/variables_test_vocacional.dart';
 import 'package:yetiand_app/screens/test_vocacional.dart';
 
+import '../home_page.dart';
+
 class ramaIngenieria extends StatelessWidget {
   final variablesTest alumno;
   const ramaIngenieria({Key key, @required this.alumno}) : super(key: key);
@@ -11,7 +13,12 @@ class ramaIngenieria extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 189, 0, 31),
-        title: const Text('Tus resultados:'),
+        title: const Text('Tus resultados:',style: TextStyle(
+            fontSize: 40,
+            fontFamily: 'Century Gothic',
+            fontWeight: FontWeight.bold,
+          ),
+          ),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -215,6 +222,18 @@ class ramaIngenieria extends StatelessWidget {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => HomePage(),
+            ),
+          );
+        },
+        backgroundColor: Colors.green,
+        child: const Icon(Icons.home),
+      ),
     );
   }
 }
@@ -258,7 +277,9 @@ Container _containerUniversidad(
         const SizedBox(
           height: 20.0,
         ),
+        
       ],
+      
     ),
   );
 }
