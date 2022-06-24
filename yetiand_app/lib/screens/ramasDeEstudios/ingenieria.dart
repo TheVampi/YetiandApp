@@ -13,7 +13,12 @@ class ramaIngenieria extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 189, 0, 31),
-        title: const Text('Tus resultados:'),
+        title: const Text('Tus resultados:',style: TextStyle(
+            fontSize: 40,
+            fontFamily: 'Century Gothic',
+            fontWeight: FontWeight.bold,
+          ),
+          ),
       ),
       body: SafeArea(
         child: SingleChildScrollView(

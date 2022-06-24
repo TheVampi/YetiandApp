@@ -47,13 +47,15 @@ class _testVocacionalState extends State<testVocacional> {
                 const Icon(
                   Icons.fact_check,
                   color: Colors.red,
-                  size: 150,
+                  size: 100,
                 ),
                 const Text('Test Vocacional',
                     style: TextStyle(
                         fontSize: 30,
                         color: Colors.red,
-                        fontWeight: FontWeight.w600)),
+                        fontFamily: 'Century Gothic',
+                        fontWeight: FontWeight.w600),
+                        ),
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
@@ -68,6 +70,7 @@ class _testVocacionalState extends State<testVocacional> {
                         style: TextStyle(
                             fontSize: 20,
                             color: Colors.red,
+                            fontFamily: 'Century Gothic',
                             fontWeight: FontWeight.w600),
                       ),
                       const SizedBox(
@@ -102,6 +105,7 @@ class _testVocacionalState extends State<testVocacional> {
                         style: TextStyle(
                             fontSize: 20,
                             color: Colors.red,
+                            fontFamily: 'Century Gothic',
                             fontWeight: FontWeight.w600),
                       ),
                       const SizedBox(
@@ -112,8 +116,8 @@ class _testVocacionalState extends State<testVocacional> {
                         children: [
                           const Icon(
                             Icons.ballot_rounded,
-                            color: Colors.blue,
                             size: 50,
+                            color: Colors.red,
                           ),
                           const SizedBox(
                             width: 15,
@@ -162,11 +166,12 @@ class _testVocacionalState extends State<testVocacional> {
                         height: 15.0,
                       ),
                       const Text(
-                        'Por último, dinos tu edad',
+                        'Dinos tu edad',
                         style: TextStyle(
                           fontSize: 20,
                           color: Colors.red,
                           fontWeight: FontWeight.w600,
+                          fontFamily: 'Century Gothic',
                         ),
                       ),
                       const SizedBox(
@@ -205,6 +210,7 @@ class _testVocacionalState extends State<testVocacional> {
                           fontSize: 20,
                           color: Colors.red,
                           fontWeight: FontWeight.w600,
+                          fontFamily: 'Century Gothic',
                         ),
                       ),
                       Row(
@@ -226,11 +232,11 @@ class _testVocacionalState extends State<testVocacional> {
                           ),
                           Text(
                             _estudiante
-                                ? 'Soy estudiante UwU 🤠'
-                                : 'No soy estudiante UnU 😥',
+                                ? 'Soy estudiante'
+                                : 'No soy estudiante',
                             style: const TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
+                              fontSize: 20,
+                              color: Color.fromARGB(255, 165, 5, 5),
                               fontWeight: FontWeight.w600,
                             ),
                           ),
@@ -364,6 +370,7 @@ class _testVocacionalState extends State<testVocacional> {
         icon: const Icon(Icons.sentiment_satisfied_alt_rounded),
         backgroundColor: Colors.deepPurple,
       ),
+
     );
   }
 
